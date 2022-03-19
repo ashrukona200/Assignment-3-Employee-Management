@@ -1,0 +1,81 @@
+/* DELETING THE DEFAULT PADDING MARGIN */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* ADDING STYLES AND APPEARANCE FOR THE SUBMIT BUTTON. */
+#submitButton button {
+    background-color: rgb(31, 18, 211);
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: white;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+
+/* APPEARANCE OF THE TABLE HEADING */
+#tableHeading{
+	text-align: center;
+}
+
+/* ADDING STYLES AND APPEARANCE FOR THE TABLE. */
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+    padding: 5px;
+}
+#mainTable{
+	text-align: center;
+	margin-top: 10px;
+}
+#table{
+	margin: 5px auto;
+	width: 1000px;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+table tr:not(:first-child){
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+table tr:not(:first-child):hover{
+	background-color: rgb(49, 247, 181);
+}
+
+/*STYLE AND APPEARANCE FOR 'Edit Table' BUTTON */
+#updateBtn{
+	text-align: center;
+}
+#updateBtn button{
+	background-color: red;
+	padding: 5px 10px;
+	border: 1px solid black;
+	color: white;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+
+/*STYLE AND APPEARANCE FOR HEADING OF THE EDIT INPUTS */
+#updateHeading{
+	padding: 80px 0 20px 0;
+}
+
+/*STYLE AND APPEARANCE FOR THE EDIT INPUTS */
+#editTable{
+	display: none;
+	padding-left: 500px;
+}
+
+/*STYLE AND APPEARANCE FOR THE 'Update' BUTTON */
+#editRowBtn{
+	background-color: #13fc27;
+	color: white;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 10px 0 20px 0;
+}

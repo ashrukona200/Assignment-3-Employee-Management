@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--THIS DIV IS AS MAIN CONTAINER-->
+    <div>
+        <!--THIS IS THE HEADING FOR ADDING EMPLOYEE FORM-->
+        <h1>ADD EMPLOYEE DETAIL</h1>
+
+        <!--THIS IS FOR TAKING USER INPUT FOR EMPLOYEE NAME-->
+        <div>
+            <pre>
+                <label for="name"><b>Name: </b></label>
+                <input id="name" type="text">
+            </pre>
+        </div>
+
+        <!--THIS IS FOR TAKING USER INPUT FOR EMPLOYEE ADDRESS-->
+        <div>
+            <pre>
+                <label for="address" ><b>Address: </b></label>
+                <textarea name="Address" id="address" cols="20" rows="3"></textarea>
+            </pre>
+        </div>
+
+        <!--THIS IS FOR TAKING USER INPUT FOR EMPLOYEE ID-->
+        <div>
+            <pre>
+                <label for="employeeid"><b>Employee Id: </b></label>
+                <input id="empid" type="text">
+            </pre>
+        </div>
+
+        <!--THIS IS FOR TAKING USER INPUT FOR EMPLOYEE DESIGNATION-->
+        <div>
+            <pre>
+                <label for="designation"><b>Designation: </b></label>
+                <input id="designation" type="text">
+            </pre>
+        </div>
+
+        <!--THIS IS THE SUBMIT BUTTON OF THE FORM-->
+        <div id="submitButton">
+            <button>Submit</button>
+        </div>
+
+        <!--THIS DIV IS AS CONTAINER OF THE EMPLYEE DETAILS TABLE-->
+        <div id="mainTable">
+
+            <!--THIS IS THE HEADING OF THE EMPLOYEE DETAILS TABLE-->
+            <h1 id="tableHeading">EMPLOYEE DETAILS</h1>
+
+            <!--THIS IS THE TABLE FOR ALL EMPLOYEE DETAILS-->
+            <table id="table">
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee Address</th>
+                    <th>Employee Id</th>
+                    <th>Employee Designation</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- THIS DIV IS FOR EDITINT THE EMPLYEE DETAILS TABLE -->
+    <div id="updateBtn">
+        <h1 id="updateHeading">Do you want to update the employee table, Please click on 'Edit Table' button.</h1>
+        <button onclick="editTableDisplay()">Edit Table</button>
+    </div>
+
+    <!-- THIS DIV IS AS INPUTS OF EDITABLE EMPLOYEE ROW OF THE EMPLOYEE TABLE WILL SHOW UP AFTER CLICKING THE 'Edit Table' BUTTON-->
+    <div id="editTable">
+
+        <!--THIS IS THE HEADING OF THE EDITABLE INPUTS-->
+        <h2>Please click on that row which one you want to edit.</h2>
+
+        <!--THIS INPUT IS FOR UPDATED EMPLOYEE NAME-->
+        <label for="Name"><b>Name: </b></label>
+        <div>
+            <input type="text" name="UpdatedName" id="updatedName">
+        </div>
+
+        <!--THIS INPUT IS FOR UPDATED EMPLOYEE ADDRESS-->
+        <label for="ADDRESS" cols="20" rows="3"><b>Address: </b></label>
+        <div>
+            <textarea name="UpdatedAddress" id="updatedAddress" cols="20" rows="3"></textarea>
+        </div>
+
+        <!--THIS INPUT IS FOR UPDATED EMPLOYEE ID-->
+        <label for="ID"><b>Id: </b></label>
+        <div>
+            <input type="text" name="UpdatedId" id="updatedId">
+        </div>
+
+        <!--THIS INPUT IS FOR UPDATED EMPLOYEE DESIGNATION-->
+        <label for="DESIGNATION"><b>Designation: </b></label>
+        <div>
+            <input type="text" name="UpdatedDesignation" id="updatedDesignation">
+        </div>
+
+        <!--THIS BUTTON IS AS A SUBMIT BUTTON OF UPDATED INPUT/INPUTS-->
+        <button onclick="editRow();" id="editRowBtn">Update</button>
+    </div>
+
+
+    <!--LINKING THE JAVASCRIPT FILE-->
+    <script src="script.js"></script>
+</body>
+
+</html>
